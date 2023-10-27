@@ -22,7 +22,9 @@ body {
   flex-wrap: wrap;
   justify-self: center;
   width: 27rem;
+  user-select: none;
 }
+
 .box {
   display: flex;
   justify-content: center;

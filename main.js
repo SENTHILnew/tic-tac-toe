@@ -61,6 +61,7 @@ function box(index) {
 function updateBox(index) {
   const box = document.querySelector(`[data-control='box_${index}']`);
   box.innerText = currentPlayer;
+  box.style.pointerEvents = "none";
   gameLog[index] = currentPlayer;
 }
 
