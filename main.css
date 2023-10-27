@@ -59,6 +59,11 @@ body {
   text-decoration: red line-through;
 }
 
+.winner-text {
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
 .bg_move {
   display: -webkit-box;
   display: -ms-flexbox;

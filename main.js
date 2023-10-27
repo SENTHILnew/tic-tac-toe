@@ -1,3 +1,4 @@
+"use strict";
 const gameContainer = document.querySelector("[data-control='gameContainer']");
 const resultElement = document.querySelector("[data-control='winnerMessage']");
 const rulesMap = {
@@ -22,6 +23,7 @@ setInput(3);
 resetGame();
 
 function resetGame() {
+  resetConfetti();
   gameContainer.style.pointerEvents = "auto";
   resultElement.classList.add("hide");
   gameLog = [];
@@ -76,6 +78,7 @@ function checkWinner(gameLog) {
     gameContainer.style.pointerEvents = "none";
     resultElement.classList.remove("hide");
     resultElement.innerText = `Winner is ${currentPlayer}`;
+    poof();
   } else if (isGameDraw) {
     gameContainer.style.pointerEvents = "none";
     resultElement.classList.remove("hide");
